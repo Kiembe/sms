@@ -3,11 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        margin: 50px;
+        border: 1px solid #ccc;
+        max-width: 300px;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0px 5px 5px #d851517e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    h1{
+        color: #f71111;
+    }
+    .price{
+        color: #882e19;
+        font-weight:900;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .Data{
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+        padding: 5px;
+        width: 98%;
+    }
+    .dt_num{
+        color: #f71111;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    
+
+    
+    .time{
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+        padding: 5px;
+        width: 98%;
+    }
+    .day{
+        color: #f71111;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .syntax_line{
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+        padding: 5px;
+        width: 98%;
+    }
+    .syntax{
+        color: #f71111;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .act{
+        color: #0929f7;
+        font-weight: 700;
+    }
+    i{
+        margin-right: 5px;
+    }
+
+    button{
+        font-size: 20px;
+        padding: 10px 35px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        background-color: #f71111;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+    }
+    button:active{
+        transform: scale(0.9);
+    }
+    button>i{
+        color: #fff;
+        margin-left: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .moreIf{
+        color: #e345a4;
+        border: 1px solid #e345a4;
+        padding: 2px 10px;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .moreIf>i{
+        transform: scaleX(-1);
+        margin-left: 5px;
+    }
+</style>
 <body>
     
-    <a href="sms:9123;?&body=SD135 BV">Text Message</a>
+    <div class="container">
+        <h1>Gói SD135</h1>
+        <p class="price">135.000đ</p>
+        <p class="Data"><i class='bx bxs-data'></i>DATA: <span class="dt_num">5,0 GB / Ngày</span></p>
+        <p class="time"><i class='bx bx-time' ></i>Hạn: <span class="day">30 ngày</span></p>
+        <p class="syntax_line"><i class='bx bx-message-dots' ></i>Soạn <span class="syntax">SD135 BV</span> <span class="act">gửi</span> <span class="syntax">9123</span></p>
+        <button><a href="sms:9123;?&body=SD135 BV">Đăng Ký</a><i class='bx bx-paper-plane' ></i></button>
+        <p class="moreIf">Chi tiết<i class='bx bx-share' ></i></p>
+    </div>
+
 
 </body>
 </html>
